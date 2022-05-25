@@ -5,7 +5,7 @@ from snacks.api.viewset import (
                                 )
 
 urlpatterns = [
-    path('api/v1/things-list', SnacksListAPIView.as_view(), name='snacks_list'),
+    path('api/v1/snacks-list', SnacksListAPIView.as_view(), name='snacks_list'),
     path('api/v1/<int:pk>', SnacksDetailAPIView.as_view(), name='snacks_detail'),
 
 ]
